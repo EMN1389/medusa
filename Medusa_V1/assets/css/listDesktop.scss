@@ -1,0 +1,27 @@
+/*feuille de style pour la page Genre Desktop */
+
+@import "_variables.scss";
+@import "menuBurger.scss";
+
+@media (min-width: 1200px){
+    #logo {
+        width: 10%;
+        border-radius: 100%;
+    }
+
+    .genre-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .genre-section{
+        overflow-x: hidden;
+    }
+    .genre-container{
+        width: 100%;
+                img {
+                    width: 70%;
+                    height: 60%;
+                    border-radius: 100%;
+                }
+    }
+} //fin du media queries min-width : 1200px;

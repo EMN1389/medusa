@@ -1,0 +1,260 @@
+
+/*feuille de style pour le menu burger*/ 
+@import"_variables"; 
+
+
+.lecteur-topnav {
+    padding: 4%;
+}
+
+#logo {
+    width:50%; 
+}
+
+.btn_burger{
+    width: 80%;
+}
+
+
+.lecteur-topnav .lecteur-menu {
+    display: none;
+    margin: auto;
+}
+
+.lecteur-topnav .lecteur-menu .lecteur-kind {
+    text-align: center;
+    width: 250px;
+    margin: auto;
+    padding: 2%;
+}
+
+.lecteur-topnav a {
+    padding: 1%;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+
+}
+
+.lecteur-topnav a.lecteur-icon {
+    display: block;
+    position: absolute;
+    right: 1%;
+    top: 1%
+}
+
+.lecteur-topnav .lecteur-kind:hover {
+    background: linear-gradient(to bottom right, $or-gradient-light, $or-gradient-dark); 
+    color: $dark-font;
+}
+.lecteur-kind{
+    color: $gray-font;
+}
+.lecteur-none {
+    display: none !important;
+}
+
+
+.lecteur-menu-picture{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+    margin: 5% 5% 2% 5%;
+}
+
+.lecteur-menu-content {
+    background: linear-gradient(to bottom right, $emeraude, $blackemeraude); 
+    text-align: center;
+    padding-bottom: 10%;
+    max-width: 95%;
+}
+
+.lecteur-menu-content h3 {
+    text-transform: uppercase;
+    font-family: $designer;
+}
+
+.lecteur-menu-search-inside {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: relative;
+    .search_bar {
+        width: 80%;
+    }
+}
+
+.lecteur-menu-alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    width: 350px;
+    margin: auto;
+    position: absolute;
+    right: 300px; //à modifier pour les écrans + grand 
+  }
+  
+  .lecteur-closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: left;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .lecteur-closebtn:hover {
+    color: black;
+  }
+
+.lecteur-contenu h3 {
+    margin: 0;
+    
+}
+
+.lecteur-container {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .lecteur-icon{
+    position: relative; 
+  }
+  .icon-bars{
+      position: absolute;
+      top: 19px;
+      left: 23px;
+       
+  }
+
+  .lecteur-bar1, .lecteur-bar2, .lecteur-bar3 {
+    width: 22px;
+    height: 2px;
+    background-color: $beige-icons;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .lecteur-change .lecteur-bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-3px, 7px);
+  }
+  
+  .lecteur-change .lecteur-bar2 {opacity: 0;}
+  
+  .lecteur-change .lecteur-bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-5px, -8px);
+  }
+
+  .lecteur-menu-search-outside{
+      display: none;
+  }
+  .btn-genre{
+      display: none;
+  }
+  .search-input1{
+        background-color: $dark-font-oppacity;
+        color: $gray-font;
+        border: none;
+        outline: none;
+        position: absolute;
+        top: 18px;
+        font-size: 1em;
+  }
+  ////////!\\ changement de MEDIA QUERIES !!! //!\\\\\\\\\\\\\\
+
+
+/*
+*********************Media querie min-width 1200px!!*******************
+**/ 
+  @media (min-width: 1200px){
+    .lecteur-topnav{
+        display: flex;
+        gap: 20%;
+    }
+    .lecteur-topnav .lecteur-menu .lecteur-kind, .lecteur-alert {
+      width: 1080px;
+    }
+    .lecteur-topnav a.lecteur-icon {
+        right: 0;
+        top: 0;
+    }
+    .lecteur-menu-searchicon{
+        padding-right: 5%;
+    }
+    .lecteur-menu-search-inside{
+        display: none;
+    }
+    .lecteur-menu-search-outside{
+        display: block;
+        .search-bar{
+            width: 100%;
+        }
+    }
+    .lecteur-menu-searchinput{
+        display: none;
+    }
+    .div-btn-genre{
+        margin-top: 22%;
+        display: flex;
+        justify-content: center;
+        padding-right: 34%;
+    
+    }
+    .btn-genre{
+        display: block;
+        width: 100%;
+    }
+
+    .btn_burger{
+        display: none;
+    }
+    .icon-bars{
+        display: none;
+    }
+    
+    .lecteur-menu-searchinput{
+        width: 30%;
+    }
+
+    .search-input2{
+        background-color: $dark-font-oppacity;
+        color: $gray-font;
+        border: none;
+        outline: none;
+        position: absolute;
+        top:11.5%;
+        right: 29.5%;
+        padding: 12px;
+        width: 20%;
+        font-size: 1.8em;
+    }
+    //search-input1 is none
+
+    // .lecteur-bar1, .lecteur-bar2, .lecteur-bar3 {
+    //     background-color: yellow;
+    // }
+}//fin du mediaqueries min-width 1200px
+
+  ////////!\\ changement de MEDIA QUERIES !!! //!\\\\\\\\\\\\\\
+
+
+/*
+*********************Media querie min-width 1400px!!*******************
+**/ 
+@media (min-width: 1400px){
+
+    .lecteur-topnav a.lecteur-icon{
+        right: 31px;
+        top: 30px
+    }
+
+    .search-input2{
+    right: 25.5%;
+    }
+}

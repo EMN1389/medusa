@@ -1,0 +1,296 @@
+/*feuille de style pour la page Genre Mobile */
+/*feuille des variables */
+/*feuille de style pour le menu burger*/
+.lecteur-topnav {
+  background-color: #000000;
+  padding: 4%;
+}
+
+#logo {
+  width: 50px;
+}
+
+.lecteur-topnav .lecteur-menu {
+  display: none;
+  margin: auto;
+}
+
+.lecteur-topnav .lecteur-menu .lecteur-kind {
+  text-align: center;
+  width: 250px;
+  margin: auto;
+}
+
+.lecteur-topnav a {
+  padding: 1%;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  color: #ffffff;
+}
+
+.lecteur-topnav a.lecteur-icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+
+.dropdown {
+  background: black;
+  display: inline;
+  float: right;
+}
+
+.lecteur-topnav .lecteur-kind:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.lecteur-none {
+  display: none;
+}
+
+.lecteur-menu-picture {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+  margin: 5% 5% 2% 5%;
+  border-radius: 100%;
+}
+
+.lecteur-menu-content {
+  background-color: #000000;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.lecteur-menu-content h3 {
+  text-transform: uppercase;
+}
+
+.lecteur-menu-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  position: absolute;
+  right: 10%;
+  top: 3%;
+}
+
+.lecteur-menu-search svg {
+  width: 50px;
+}
+
+.lecteur-menu-searchicon {
+  border-bottom: solid gray;
+  padding-right: 2%;
+}
+
+.lecteur-menu-searchinput {
+  background-color: black;
+  color: white;
+  border: none;
+  border-bottom: solid gray;
+  outline: none;
+}
+
+.lecteur-menu-alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  width: 350px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 35%;
+}
+
+.lecteur-menu-alert2 {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  width: 350px;
+  margin: auto;
+}
+
+.lecteur-closebtn {
+  margin-right: 15px;
+  color: white;
+  font-weight: bold;
+  float: left;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.lecteur-closebtn:hover {
+  color: black;
+}
+
+.lecteur-contenu h3 {
+  margin: 0;
+}
+
+.lecteur-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.lecteur-bar1, .lecteur-bar2, .lecteur-bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.lecteur-change .lecteur-bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 7px);
+  transform: rotate(-45deg) translate(-8px, 7px);
+}
+
+.lecteur-change .lecteur-bar2 {
+  opacity: 0;
+}
+
+.lecteur-change .lecteur-bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+  .lecteur-topnav .lecteur-menu .lecteur-kind, .lecteur-alert {
+    width: 350px;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .lecteur-topnav {
+    padding: 1%;
+  }
+  .lecteur-topnav .lecteur-menu .lecteur-kind, .lecteur-alert {
+    width: 580px;
+  }
+  .lecteur-topnav a.lecteur-icon {
+    right: 0;
+    top: 0;
+  }
+  .lecteur-episodescontent {
+    padding-top: 4%;
+  }
+  .lecteur-episodescard {
+    width: 250px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .lecteur-topnav .lecteur-menu .lecteur-kind, .lecteur-alert {
+    width: 1080px;
+  }
+  .lecteur-topnav a.lecteur-icon {
+    right: 0;
+    top: 0;
+  }
+  .lecteur-menu-searchicon {
+    padding-right: 5%;
+  }
+  .lecteur-menu-searchinput {
+    width: 100%;
+  }
+  .lecteur-episodes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 60px;
+  }
+  .lecteur-episodescontent {
+    padding-top: 4%;
+    display: inline;
+  }
+  .lecteur-episodescard {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+body {
+  margin: none;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Laila', sans-serif;
+}
+
+.genre-section {
+  overflow-x: scroll;
+}
+
+.genre-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.genre-container .genre-card {
+  text-align: center;
+}
+
+.genre-container img {
+  width: 100%;
+  height: 60%;
+  border-radius: 100%;
+}
+
+.genre-container a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+}
+
+.genre-container .genre-fantome {
+  opacity: 0;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/*# sourceMappingURL=listMobile.css.map */

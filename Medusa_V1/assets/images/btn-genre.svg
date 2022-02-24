@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="232" height="119" viewBox="0 0 232 119">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.155" y1="0.042" x2="0.865" y2="0.838" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#20413e"/>
+      <stop offset="1" stop-color="#060d0c"/>
+    </linearGradient>
+    <filter id="Tracé_71" x="0" y="0" width="232" height="119" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3" dy="-2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-color="#171717" flood-opacity="0.671"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracé_71-2" x="0" y="0" width="232" height="119" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#ffefef" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Groupe_265" data-name="Groupe 265" transform="translate(-1124.5 -798.5)">
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 1124.5, 798.5)" filter="url(#Tracé_71)">
+        <path id="Tracé_71-3" data-name="Tracé 71" d="M49,0H162a49,49,0,0,1,0,98H49A49,49,0,0,1,49,0Z" transform="translate(13.5 12.5)" fill="url(#linear-gradient)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 1124.5, 798.5)" filter="url(#Tracé_71-2)">
+        <path id="Tracé_71-4" data-name="Tracé 71" d="M49,0H162a49,49,0,0,1,0,98H49A49,49,0,0,1,49,0Z" transform="translate(13.5 12.5)" fill="#fff"/>
+      </g>
+    </g>
+    <text id="GENRE" transform="translate(1175 879)" fill="#c9c5c5" font-size="45" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">GENRE</tspan></text>
+  </g>
+</svg>

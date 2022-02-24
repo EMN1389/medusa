@@ -1,0 +1,185 @@
+/**feuille de style pour Homepage format ordinateur **/
+@import"_variables", "_menuBurger";
+
+/* Media Querie pour les écran de plus de 1200px */ 
+  @media (min-width: 1200px){
+    
+    #logo {
+        width: 30%;
+    }
+    
+    //la décoration wave en absolute relative a homepage-container, 
+    //attention il était en "none" en mobile
+    .homepage_wave{
+        display: block;
+        position: absolute;
+        right: -40%;
+        width: 80%;
+    }
+
+        //le bouton serie/film
+    .homepage-tendances-switchon{
+        max-width: 150px;
+        
+    }
+    /***********************Section tendance  ***********************/
+    .homepage-tendances-title{
+            //titre "Tendance"
+            h1{
+                font-size: 2em;
+            }
+    }
+
+    /***********************Section mieux noté et poulaire***********************/
+    .homepage-bestnote, .homepage-popu{
+        //titre "les meilleurs notes" & "populaires"
+        h1{
+            margin-left: 3%;
+            font-family: $designer;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+
+     /***********************cards ***********************/
+     //container des cards
+    .homepage-container{
+        // overflow-x: hidden; //attention du coup on ne peut plus aller sur le côté
+        position: relative;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: $or-gradient-light $blackemeraude ;
+    }
+
+    .homepage-cards{
+        display: flex;
+        // width: 150%;
+        margin: 0 3%;
+        
+        //Jacquettes de films pour les section tendance, mieux noté et populaires
+        img{
+            width: 100%;
+            max-width: 310px;
+            min-width: 309px;
+            max-height: 410px;
+            width: 100%;
+        }
+    }
+
+    //Div avec le titre des films
+    .homepage-theCard-title{
+        display: flex;
+        justify-content: space-between;
+        gap: 50%;
+        
+
+        h2{
+            font-size: 0.9em;
+            text-align: center;
+        }
+
+        //Div avec la note de chaque film, retiré pour le moment (en commentaire)
+        // .homepage-theCard-note{
+        //     display: flex;
+        //     svg{
+        //         width: 15%!important;
+        //     }
+        //     p{
+        //         font-size: 0.9em;
+        //     }
+        // }
+    }
+
+
+    /*************section genre   ***********************/
+    .homepage-genre{
+        //titre "genre"
+        h1{
+            text-align: center;
+            font-family: $designer;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+    }
+
+     //cacher les barre de scroll latérale pour la section genre
+    .homepage-genre{
+    //     overflow-x: hidden;
+        scroll-behavior: smooth;
+        scrollbar-width: thin;
+        scrollbar-color: $or-gradient-light $blackemeraude ;
+    }
+
+    //cards des genres 
+    .homepage-genre-container{
+        width: 150%;
+                //les images des genres
+                img {
+                    width: 300px;
+                    height: 280px;
+                    border-radius: 100%;
+                    margin-bottom: 10%;
+                }
+                .genre-card-filtre{
+                    width: 300px;
+                    height: 280px;
+                    border-radius: 100%;
+                }
+                a{
+                    font-size: 2em;
+                    font-family: $designer;
+                    text-transform: uppercase;
+                    top: 40%;
+                }
+    }
+
+    /*************section actors  ***********************/
+    .homepage-actors{
+        
+        //titre "acteurs"
+        h1{
+            text-align: center;
+            font-family: $designer;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        .homepage-actor-container{
+            // overflow-x: hidden;
+            background: none; 
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: $or-gradient-light $blackemeraude ;
+        }
+        //card acteur
+        .homepage-actor-card{
+            background: linear-gradient(to bottom, $or-gradient-light, $or-gradient-dark);
+            display: flex;
+            align-items: center;
+            margin-bottom: 5%;
+            //photo de l'acteur
+            img{ 
+               margin: 10px;
+            }
+            //le nom de l'acteur
+            a{
+                margin: 10px;
+            }
+        }
+    }//end homepage-actors
+
+    footer{
+        margin-bottom: 2%;
+        margin-right: 1%;
+        justify-content: right; 
+        gap: 70px; 
+        p{
+            font-size: 1em;
+        }
+        a{
+            font-size: 1em;
+        }
+    }
+
+}//fin du min-widt média 1200px
+    

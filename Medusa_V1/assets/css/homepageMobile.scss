@@ -1,0 +1,188 @@
+/*feuille de style Homepage mobile*/ 
+
+@import"_variables", "_menuBurger";
+
+body{
+    margin: 0;
+    background: linear-gradient(to bottom right, $emeraude, $blackemeraude); 
+    background-repeat: no-repeat;
+    color: $white;
+    font-family: $prompt; 
+}
+.homepage_wave{
+    display: none;
+}
+.homepage-container{
+    position: relative;
+        //essai sur le cadre dans la section tendance 
+        .tendance-frame{
+            position: absolute;
+            top: -5%;
+            left: -10%;
+            width: 100%;
+            height: 250px;
+            rotate: 90deg;
+            z-index: -1;
+        }
+}
+//le bouton serie/film
+.homepage-tendances-switchon{
+    max-width: 90px;
+    
+}
+
+/***********************Section tendance  ***********************/
+.homepage-tendances-title{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 3%;
+        //titre "tendance" 
+        h1{
+            font-family: $designer;
+            text-transform: uppercase;
+            font-size: 1.2em;
+        }
+
+        //Bouton switch on/off pour le moment en superposition mais plus tard on le fera en style
+        .homepage-tendances-switchoff{
+            position: absolute;
+            z-index: 200;
+            right: 0;
+            bottom: 35px;
+            display: none;
+        }   
+}
+
+//containers 
+.homepage-container{
+    overflow-x: scroll;
+}
+
+//cards
+.homepage-cards{
+    display: flex;
+    gap: 20px; 
+    margin: 0 8%;
+
+    img{
+        width: 100%;
+        max-width: 108px;
+        max-height: 162px;
+        min-width: 107px;
+        min-height: 161px;
+    }
+
+    //titre des cards
+    .homepage-theCard-title{
+        display: flex;
+        // justify-content: space-between;
+
+        h2{
+            font-size: 0.8em;
+            color: $gray-font;
+            // padding-right: 20px;
+            
+        }
+        a{
+            text-decoration: none;
+        }
+        //div "Note" de chaque card
+        // .homepage-theCard-note{
+        //     display: flex;
+        //     svg{
+        //         width: 70%;
+        //     }
+        //     p{
+        //         font-size: 0.9em;
+        //     }
+        // }
+    } //end homepage-theCard-title
+
+}
+
+//section genre
+.homepage-genre{
+    overflow-x: scroll;
+}
+
+//container de la section genre
+.homepage-genre-container{
+    display: flex;
+    gap: 30px; 
+
+        //card genre et acteur
+        .homepage-genre-card{
+            text-align: center;
+            position: relative;
+        }
+        
+            //image des cards genre & acteur
+            img {
+                width: 120px;
+                height: 120px;
+                border-radius: 100px;
+            }
+            .genre-card-filtre{
+                width: 120px;
+                height: 120px;
+                border-radius: 100px;
+                background-color: $blackemeraude;
+                position: absolute;
+                top: 0;
+                opacity: 50%;
+                z-index: 50;
+            }
+            a{
+                text-decoration: none;
+                display: flex; 
+                justify-content: center;
+                color: $white; 
+                position: absolute;
+                top: 35%;
+                left: 0; 
+                right: 0; 
+                z-index: 51;
+            }
+}
+.homepage-actors{
+    
+    .homepage-actor-container{
+        display: flex;
+        gap: 10px;
+        padding-left: 10px;
+        padding-top: 10px;
+        background: linear-gradient(to bottom, $or-gradient-light, $or-gradient-dark);
+        margin-bottom: 10%;
+        overflow-x: auto;
+    }
+    .homepage-actor-card{
+        img{
+            width: 100%;
+            max-width: 108px;
+            max-height: 162px;
+            min-width: 107px;
+            min-height: 161px;        
+        }
+        a{
+            text-decoration: none;
+            color: $gray-font;
+        }
+    }
+    
+}
+
+//footer
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+        p{
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+}
+

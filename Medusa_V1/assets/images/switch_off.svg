@@ -1,0 +1,22 @@
+<svg id="switch_off" data-name="switch off" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="20" viewBox="0 0 50 20">
+  <defs>
+    <filter id="Rectangle_22" x="0" y="0" width="27" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.361"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Rectangle_21" data-name="Rectangle 21" fill="#b8280a" stroke="#707070" stroke-width="1">
+    <rect width="50" height="20" rx="5" stroke="none"/>
+    <rect x="0.5" y="0.5" width="49" height="19" rx="4.5" fill="none"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_22)">
+    <g id="Rectangle_22-2" data-name="Rectangle 22" fill="#fff" stroke="rgba(112,112,112,0.57)" stroke-width="1">
+      <rect width="25" height="20" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="24" height="19" rx="4.5" fill="none"/>
+    </g>
+  </g>
+  <text id="off" transform="translate(31 15)" fill="#1c1b1b" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">off</tspan></text>
+</svg>

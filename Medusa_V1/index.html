@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>ACS Vidéo</title> <!--à changer-->
+                
+        <!--feuilles de style-->
+        <link rel="stylesheet" href="./assets/css/homepageMobile.css"> 
+        <link rel="stylesheet" href="./assets/css/homepageDesktop.css">
+
+        <!--feuille de script-->
+        <script src="./assets/js/script.js" defer></script>
+        <script src="./assets/js/script-homepage.js" defer></script>
+        
+    </head>
+
+    <body>
+        <!-- Top Navigation Menu -->
+    <nav class="lecteur-topnav">
+        <img id="logo" src="assets/images/logo.svg" alt="" srcset="">
+
+        <!--menu drop apparait quand on appuit sur le bouton-->
+        <div class="lecteur-menu">
+          <div class="lecteur-menu-content">
+            <img class="lecteur-menu-picture" src="assets/images/avatar.png" alt="">
+            <h3>Identifiant</h3>
+            <div class="lecteur-menu-search-inside">
+              <img class="search_bar" src="assets/images/barre_derecherche.svg" alt="search bar">
+              <input type="text" name="search" class="search-input1">
+            </div>
+            <h3>Favoris</h3>
+            <a href="#" class="lecteur-kind">Action</a>
+            <a href="#" class="lecteur-kind">Aventure</a>
+            <a href="#" class="lecteur-kind">Animation</a>
+            <a href="#" class="lecteur-kind">Comedie</a>
+            <a href="#" class="lecteur-kind">Crime</a>
+            <a href="#" class="lecteur-kind">Documentaire</a>
+            <a href="#" class="lecteur-kind">Drame</a>
+            <a href="#" class="lecteur-kind">Familiale</a>
+            <a href="#" class="lecteur-kind">Fantastique</a>
+            <a href="#" class="lecteur-kind">Guerre</a>
+            <a href="#" class="lecteur-kind">Histoire</a>
+            <a href="#" class="lecteur-kind">Horreur</a>
+            <a href="#" class="lecteur-kind">Musique</a>
+            <a href="#" class="lecteur-kind">Mystère</a>
+            <a href="#" class="lecteur-kind">Romance</a>
+            <a href="#" class="lecteur-kind">Science-fiction</a>
+            <a href="#" class="lecteur-kind">Téléfilm</a>
+            <a href="#" class="lecteur-kind">Thriller</a>
+            <a href="#" class="lecteur-kind">Western</a>
+          </div>
+        </div>
+          <div class="lecteur-menu-search-outside">
+            <img class="search-bar" src="assets/images/barre_derecherche.svg" alt="search bar">
+            <input type="text" name="search" class="search-input2">
+          </div>
+        <!--message d'alerte-->
+        <div class="lecteur-menu-alert lecteur-none">
+          <span class="lecteur-closebtn">&times;</span> 
+          <strong>Erreur !</strong> Aucun résultat trouvé
+        </div>
+        <a href="#" class="lecteur-icon">
+            <div class="div-btn-genre">
+              <img class="btn-genre" src="assets/images/btn-genre.svg" alt="button genre">
+            </div>
+            <img class="btn_burger" src="assets/images/btn_burger_ssbar.svg" alt="button burger">
+            <div class="icon-bars">
+              <div class="lecteur-bar1"></div>
+              <div class="lecteur-bar2"></div>
+              <div class="lecteur-bar3"></div>
+            </div>
+        </a>
+      </nav> <!--fin de la nav-->
+
+        <main class="contenu">
+            <section class="homepage-tendances">
+                <div class="homepage-tendances-title">
+                    <h1>Tendances du moment</h1>
+                    <img class="homepage-tendances-switchon" src="assets/images/btn-serie-mobile.svg" alt="">
+                </div>
+
+                <div class="homepage-container">
+                    <!-- <img class="tendance-frame" src="assets/images/cadre.svg" alt="frame"> -->
+                    <div class="homepage-cards">
+                        <!--Div card tendance en JS boucle 20 résultats -->
+                    </div>        
+                </div> <!--fin de la div "homepage-tendances-cards" -->
+            </section> <!--fin de la section "tendances"-->
+
+           <!-------------------section des films les Mieux Notés----------------> 
+
+            <section class="homepage-bestnote">
+                <!--wave-->
+                <img class="homepage_wave" src="assets/images/wave.svg" alt="wave deco">
+                <h1>Les meilleurs notes</h1>
+
+                <div class="homepage-container">
+                    <div class="homepage-cards">
+                        <!--Div card bestnote en JS boucle 20 résultats-->
+                        </div>
+                    </div>
+                </div> <!--fin de la div "homepage-bestnote-cards" -->
+            </section>
+
+            <!-------------------section des films les plus populaires ----------------> 
+            <section class="homepage-popu">
+                    <h1>Les films les plus populaires</h1>
+                    <div class="homepage-container">
+                        <div class="homepage-cards">
+                            <!--Div card  populaire en JS boucle 20 résultats-->
+                        </div>  
+                    </div> <!--fin de la div" homepage-container ""-->
+                </div><!--fin de la div "homepage-popu-->
+            </section><!--fin de la section populaire-->
+
+            <!-------------------section Genres----------------> 
+            <section class="homepage-genre">
+                <h1>Genre</h1>
+                    <div class="homepage-genre-container">
+                        <!--genre action-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/action.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Action</a>
+                        </div>
+                        <!--genre aventure-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/aventure.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Aventure</a>
+                        </div>
+                        <!--genre animation-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/animation.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Animation</a>
+                        </div>
+                        <!--genre Comedie-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/comedie.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Comedie</a>
+                        </div>
+                        <!--genre Crime-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/crime.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Crime</a>
+                        </div>
+                        <!--genre Documentaire-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/documentaire.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Documentaire</a>
+                        </div>
+                        <!--genre Drame-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/drame.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Drame</a>
+                        </div>
+                        <!--genre Familiale-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/familiale.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Familiale</a>
+                        </div>
+                        <!--genre Fantastique-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/fantastique.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Fantastique</a>
+                        </div>
+                        <!--genre Guerre-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/guerre.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Guerre</a>
+                        </div>
+                        <!--genre Histoire-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/histoire.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Histoire</a>
+                        </div>
+                        <!--genre Horreur-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/horreur.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Horreur</a>
+                        </div>
+                        <!--genre Musique-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/musique.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Musique</a>
+                        </div>
+                        <!--genre Mystère-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/mystere.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Mystère</a>
+                        </div>
+                        <!--genre Romance-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/documentaire.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Romance</a>
+                        </div>
+                        <!--genre Science Fiction-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/sciencefiction.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Science-fiction</a>
+                        </div>
+                        <!--genre téléfilm-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/telefilm.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Téléfilm</a>
+                        </div>
+                        <!--genre Thriller-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/thriller.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Thriller</a>
+                        </div>
+                        <!--genre Western-->
+                        <div class="homepage-genre-card">
+                            <img src="assets/images/img-genre/western.png" alt="">
+                            <div class="genre-card-filtre"></div>
+                            <a class="genres" href="#">Western</a>
+                        </div>
+                    </div>
+            </section> <!--fin de la section Genre-->
+
+            <!-------------------section des acteurs ---------------->
+            <section class="homepage-actors">
+                <h1>Acteurs</h1>                
+                    <div class="homepage-actor-container">
+                        <!--Div card acteurs en JS boucle 20 résultats-->
+                    </div>
+            </section> <!--fin de la section Acteurs-->
+        </main>
+        
+        <footer>
+            <p>&copy Copyright</p>
+            <a href="">Mentions légales</a>
+            <a href="">CGV</a>
+        </footer>
+    </body>
+</html> 
+ 

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="82.5" height="84.5" viewBox="0 0 82.5 84.5">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.26" x2="0.781" y2="0.905" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#196d58"/>
+      <stop offset="1" stop-color="#010d0a"/>
+    </linearGradient>
+    <filter id="Ellipse_19" x="3.5" y="5.5" width="79" height="79" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_20" x="0" y="2" width="76" height="76" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" dy="-2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#f3f1f1" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.215" y1="0.095" x2="0.85" y2="0.836" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#116055"/>
+      <stop offset="1" stop-color="#051210"/>
+    </linearGradient>
+    <filter id="Ellipse_21">
+      <feOffset dx="2" dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur-3"/>
+      <feFlood flood-color="#fff9f9" flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn_burger" transform="translate(5)">
+    <text id="_" data-name="  " transform="translate(35)" fill="#fff" font-size="13" font-family="SegoeUI, Segoe UI"><tspan x="0" y="14" xml:space="preserve">  </tspan></text>
+    <g id="btn-burger" transform="translate(0 7)">
+      <g transform="matrix(1, 0, 0, 1, -5, -7)" filter="url(#Ellipse_19)">
+        <circle id="Ellipse_19-2" data-name="Ellipse 19" cx="35" cy="35" r="35" transform="translate(5 7)" fill="url(#linear-gradient)"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -5, -7)" filter="url(#Ellipse_20)">
+        <circle id="Ellipse_20-2" data-name="Ellipse 20" cx="35" cy="35" r="35" transform="translate(5 7)" fill="url(#linear-gradient)"/>
+      </g>
+      <g data-type="innerShadowGroup">
+        <circle id="Ellipse_21-2" data-name="Ellipse 21" cx="25" cy="25" r="25" transform="translate(10 10)" fill="url(#linear-gradient-3)"/>
+        <g transform="matrix(1, 0, 0, 1, -5, -7)" filter="url(#Ellipse_21)">
+          <circle id="Ellipse_21-3" data-name="Ellipse 21" cx="25" cy="25" r="25" transform="translate(15 17)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+    <g id="Groupe_218" data-name="Groupe 218" transform="translate(-48 -7.5)">
+      <line id="Ligne_6" data-name="Ligne 6" x2="16.5" transform="translate(76 44.5)" fill="none" stroke="#b8b391" stroke-width="2"/>
+      <path id="Tracé_66" data-name="Tracé 66" d="M0,0H15.33" transform="translate(76 54.5)" fill="none" stroke="#b8b391" stroke-width="2"/>
+      <line id="Ligne_8" data-name="Ligne 8" x2="10.5" transform="translate(76 49.5)" fill="none" stroke="#b8b391" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,130 @@
+/*feuille de style acteur*/ 
+
+@import"_variables", "_menuBurger";
+
+
+body{
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+    background: linear-gradient(to bottom right, $emeraude, $blackemeraude); 
+
+    // header info & description//
+    .acteur-header{
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        width: 100%;
+        background: linear-gradient(to bottom, $or-gradient-light, $or-gradient-dark);
+
+        .acteur-header-img{
+            // display: block;
+            // margin: 0 auto;
+            display: flex;
+            align-items: center;
+            width: 100%;        
+            max-width: 108px;
+            max-height: 162px;
+            min-width: 107px;
+            min-height: 161px;      
+            margin:0 5%;
+        }
+
+        .acteur-header-info{
+            font-size: 0.7em;
+            color: $blackemeraude;
+            // text-align: center;
+        }
+    }
+
+    // cards//
+    .acteur-filmo{
+        margin-top: 50px;
+        margin-left: 3px;
+        color: white;
+
+    .acteur-filmo-scroll{
+        overflow-x: scroll;
+        scrollbar-width: none;
+
+        // container des cards//
+        .acteur-filmo-card{
+            width: 1000px;
+            height: auto;
+            display: flex;
+            gap: 30px;
+            
+            // chaque card//
+            .acteur-filmo-card-row{
+               width: 170px;
+               height: 200px;
+               margin-left: 6px;
+               padding: 30px; 
+               background: url("../images/cadre.svg") center no-repeat;
+               background-size: contain;
+            }
+        }
+    }
+      
+}
+
+    footer{
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{ 
+            text-decoration: none;
+            color: rgb(112, 112, 112);
+        }
+    } 
+}
+
+////////!\\ changement de MEDIA QUERIES !!! //!\\\\\\\\\\\\\\
+
+
+/*
+*********************Media querie min-width 1200px!!*******************
+**/ 
+@media (min-width: 1200px){
+    .search-input2{
+        right: 300px;
+    }
+
+    .btn-genre{
+        margin-left: 12%;
+    }
+
+    .acteur-header-img{
+        width: 100%;
+        max-width: 310px;
+        min-width: 209px !important;
+        min-height: 309px !important;
+        max-height: 410px;
+        width: 100%;
+    }
+
+    .acteur-header-info{
+        font-size: 1.2em !important;
+    }
+
+    footer{
+        display: flex;
+        margin-bottom: 2%;
+        margin-right: 1%;
+        justify-content: right !important; 
+        gap: 70px; 
+
+        p{
+            font-size: 1em;
+        }
+        a{
+            font-size: 1em;
+        }
+    }
+}

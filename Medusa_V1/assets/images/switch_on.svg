@@ -1,0 +1,23 @@
+<svg id="switch_on" data-name="switch on" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="32" viewBox="0 0 50 32">
+  <defs>
+    <filter id="Rectangle_22" x="23" y="0" width="27" height="20" filterUnits="userSpaceOnUse">
+      <feOffset dx="-2" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-opacity="0.361"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Tracé_2" data-name="Tracé 2" fill="#6db262">
+    <path d="M 45 19.5 L 5 19.5 C 2.51869010925293 19.5 0.5 17.48130989074707 0.5 15 L 0.5 5 C 0.5 2.51869010925293 2.51869010925293 0.5 5 0.5 L 45 0.5 C 47.4813117980957 0.5 49.5 2.51869010925293 49.5 5 L 49.5 15 C 49.5 17.48130989074707 47.4813117980957 19.5 45 19.5 Z" stroke="none"/>
+    <path d="M 5 1 C 2.794391632080078 1 1 2.794389724731445 1 5 L 1 15 C 1 17.20561027526855 2.794391632080078 19 5 19 L 45 19 C 47.20560836791992 19 49 17.20561027526855 49 15 L 49 5 C 49 2.794389724731445 47.20560836791992 1 45 1 L 5 1 M 5 0 L 45 0 C 47.76142120361328 0 50 2.238580703735352 50 5 L 50 15 C 50 17.76141929626465 47.76142120361328 20 45 20 L 5 20 C 2.238571166992188 20 0 17.76141929626465 0 15 L 0 5 C 0 2.238580703735352 2.238571166992188 0 5 0 Z" stroke="none" fill="#707070"/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_22)">
+    <g id="Rectangle_22-2" data-name="Rectangle 22" transform="translate(25)" fill="#fff" stroke="rgba(112,112,112,0.69)" stroke-width="1">
+      <rect width="25" height="20" rx="5" stroke="none"/>
+      <rect x="0.5" y="0.5" width="24" height="19" rx="4.5" fill="none"/>
+    </g>
+  </g>
+  <text id="on_" data-name="on
+" transform="translate(9 14)" fill="#1c1b1b" font-size="11" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">on</tspan><tspan x="0" y="15"></tspan></text>
+</svg>

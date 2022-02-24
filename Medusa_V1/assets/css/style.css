@@ -1,0 +1,30 @@
+.modules {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.modules .module {
+  padding: 12px 32px;
+  border: 2px dashed #818da8;
+  border-radius: 12px;
+  cursor: move;
+}
+
+.drop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 250px;
+  width: 400px;
+  border: 2px dashed #818da8;
+  border-radius: 12px;
+}
+
+.drop--hover {
+  background-color: rgba(255, 196, 0, 0.836);
+}
+
+.module--drag {
+  background-color: rgba(0, 162, 255, 0.836);
+}/*# sourceMappingURL=style.css.map */

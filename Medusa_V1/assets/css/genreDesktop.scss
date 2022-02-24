@@ -1,0 +1,78 @@
+/*feuille de style pour la page Genre Desktop */
+
+@import "_variables.scss";
+@import "menuBurger.scss";
+
+@media (min-width: 1200px){
+    #logo {
+        width: 30%;
+    }
+    .btn_burger, .icon-bars{
+        display: none;
+    }
+    .lecteur-menu-searchinput{
+        width: 30%;
+        left: 50%;
+        top:19%;
+        padding-top: 10px;
+        font-size: 2em;
+    }
+
+    .contenu{
+        position: relative; 
+    }
+    //wave deco, en absolute relative à main class="contenu"
+    .genre-wave{
+        display: block;
+        position: absolute;
+        z-index: 0;
+    }
+    .genre-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .genre-section{
+        overflow-x: hidden;
+        margin: 8%;
+    }
+    .genre-container{
+        gap:100px;
+        width: 94%;
+        margin-left: 3%;
+                .genre-card-frame{
+                    width: 116%;
+                    left: -17px; 
+                    height: 86%;
+                    top:-12px;
+                }
+                .genre-card-img {
+                    width: 89%;
+                }
+                a{
+                    margin-top: 5%;
+                    font-size: 1.8em;
+                }
+    }
+
+    .genre-fantome-frame{
+        width: 0;
+        height: 0;
+        display: none;
+    }
+    .genre-fantome{
+        width: 0;
+    }
+
+footer{
+    margin-bottom: 2%;
+    justify-content: right; 
+    gap: 70px; 
+    p{
+        font-size: 1em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
+} //fin du media queries min-width : 1200px;
+

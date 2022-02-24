@@ -1,0 +1,72 @@
+/*feuille des variables */
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Designer";
+  src: url("../fonts/designer.otf") format("truetype");
+  font-weight: 400;
+}
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(to right, #013f31, #3d5702);
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .accueil-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+body .accueil-main .accueil-main-titre {
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+body .accueil-main .accueil-main-img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+body .accueil-main .accueil-main-div {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+}
+body .accueil-main .accueil-main-div .accueil-main-div-connect {
+  padding: 12px 12px;
+  margin-top: 160px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 30px;
+  display: block;
+  text-decoration: none;
+  color: #cccbcb;
+}
+body .accueil-main .accueil-main-div .accueil-main-div-inscrip {
+  display: block;
+  text-decoration: none;
+  color: #cccbcb;
+}
+body footer {
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-top: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer a {
+  text-decoration: none;
+  color: #707070;
+}/*# sourceMappingURL=accueil.css.map */

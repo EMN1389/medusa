@@ -1,0 +1,16 @@
+<svg id="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="599" height="110" viewBox="0 0 599 110">
+  <defs>
+    <filter id="MEDUSA" x="0" y="0" width="599" height="110" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#2d2b2b" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#MEDUSA)" style="mix-blend-mode: color-burn;isolation: isolate">
+    <text id="MEDUSA-2" data-name="MEDUSA" transform="translate(0 108)" fill="#fff" font-size="170" font-family="DESIGNERRegular, DESIGNER"><tspan x="0" y="0">MEDUSA</tspan></text>
+  </g>
+  <path id="Polygone_1" data-name="Polygone 1" d="M16.466,4a3,3,0,0,1,5.069,0L35.083,25.395A3,3,0,0,1,32.549,30H5.451a3,3,0,0,1-2.534-4.605Z" transform="translate(256 36) rotate(90)" fill="#fff" opacity="0.58"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="253" height="106" viewBox="0 0 253 106">
+  <defs>
+    <filter id="Tracé_69" x="0" y="3" width="250" height="100" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="3" input="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood flood-color="#030303" flood-opacity="0.722" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.156" x2="0.893" y2="0.955" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#daaa2c"/>
+      <stop offset="0.699" stop-color="#5f4b15"/>
+      <stop offset="0.837" stop-color="#514012"/>
+      <stop offset="1" stop-color="#473810"/>
+    </linearGradient>
+    <filter id="Tracé_51" x="122" y="0" width="131" height="106" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-color="#fff" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracé_53" x="133.008" y="8.088" width="110.505" height="89.824" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-3"/>
+      <feFlood flood-color="#fff" flood-opacity="0.62"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="btn-serie-desk" transform="translate(0 3)">
+    <g id="btn-serie">
+      <g data-type="innerShadowGroup">
+        <path id="Tracé_69-2" data-name="Tracé 69" d="M35,0H215a35,35,0,0,1,35,35V65a35,35,0,0,1-35,35H35A35,35,0,0,1,0,65V35A35,35,0,0,1,35,0Z" fill="#0e1513"/>
+        <g transform="matrix(1, 0, 0, 1, 0, -3)" filter="url(#Tracé_69)">
+          <path id="Tracé_69-3" data-name="Tracé 69" d="M35,0H215a35,35,0,0,1,35,35V65a35,35,0,0,1-35,35H35A35,35,0,0,1,0,65V35A35,35,0,0,1,35,0Z" transform="translate(0 3)" fill="#fff"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 0, -3)" filter="url(#Tracé_51)">
+        <path id="Tracé_51-2" data-name="Tracé 51" d="M35,0H90a35,35,0,0,1,35,35V65a35,35,0,0,1-35,35H35A35,35,0,0,1,0,65V35A35,35,0,0,1,35,0Z" transform="translate(125 3)" fill="url(#linear-gradient)"/>
+      </g>
+      <text id="SERIE" transform="translate(32 62.927)" fill="#c9c5c5" font-size="32" font-family="DidactGothic-Regular, Didact Gothic"><tspan x="0" y="0">SERIE</tspan></text>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, -3)" filter="url(#Tracé_53)">
+      <path id="Tracé_53-2" data-name="Tracé 53" d="M29.262,0H75.244a29.3,29.3,0,0,1,29.262,29.339V54.486A29.3,29.3,0,0,1,75.244,83.824H29.262A29.3,29.3,0,0,1,0,54.486V29.339A29.3,29.3,0,0,1,29.262,0Z" transform="translate(136.01 11.09)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

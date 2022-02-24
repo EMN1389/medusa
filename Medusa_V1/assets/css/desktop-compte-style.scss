@@ -1,0 +1,46 @@
+@import '_variables.scss';
+
+@media screen and (min-width: 768px){
+
+    body{
+
+        .compte-img-avatar{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100px;
+            margin-top: 160px;
+        }
+
+        .accueil-main-div-connect{
+            padding: 12px 12px;
+            margin-top: 160px;
+            margin-bottom: 30px;
+            background-color: transparent;
+            border: solid 1px;
+            border-radius: 30px;
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(204, 203, 203);
+        }
+    
+        footer{
+            border-top: solid 1px rgba(105, 105, 105, 0.548);
+            padding-top: 12px;
+            margin-left: 7%;
+            margin-right: 7%;
+            margin-top: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+            a{ 
+                text-decoration: none;
+                color: rgb(150, 148, 148);
+            }
+        }
+    }
+}
+
+    

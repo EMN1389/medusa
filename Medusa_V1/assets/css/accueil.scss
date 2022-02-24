@@ -1,0 +1,81 @@
+@import '_variables.scss';
+
+body{
+    background: linear-gradient(to right, rgb(1, 63, 49), rgb(61, 87, 2));
+    font-family: Arial, Helvetica, sans-serif;
+  
+//     h3.a {text-shadow: -1px -1px white, 1px 1px #333}
+// h3.b {text-shadow: 1px 1px white, -1px -1px #444}
+
+
+    .accueil-main{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+
+        .accueil-main-titre{
+            color: white;
+            font-size: 2em;
+            text-align: center;
+            margin-top: 120px;
+            margin-bottom: 90px;
+        }
+      
+        .accueil-main-img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+            
+        }
+
+        .accueil-main-div{
+            display: block;
+            text-align: center;
+            font-weight: 600;
+
+            .accueil-main-div-connect{
+                padding: 12px 12px;
+                margin-top: 160px;
+                margin-bottom: 30px;
+                background-color: transparent;
+                border: solid 1px;
+                border-radius: 30px;
+                display: block;
+                text-decoration: none;
+                color: rgb(204, 203, 203);
+            }
+
+            .accueil-main-div-inscrip{
+                display: block;
+                text-decoration: none;
+                color: rgb(204, 203, 203);
+            }
+        }
+    }
+
+
+    footer{
+        margin-left: 7%;
+        margin-right: 7%;
+        margin-top: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a{ 
+            text-decoration: none;
+            color: rgb(112, 112, 112);
+        }
+    }
+}
+
+
+
+
+
